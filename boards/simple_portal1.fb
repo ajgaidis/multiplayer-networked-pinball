@@ -1,0 +1,7 @@
+board name=SimplePortal1 gravity = 25.0 friction1 = 0.0 friction2 = 0.0
+
+# define three ball
+ball name=BallA x=1 y=19 xVelocity=3 yVelocity=0
+
+# define some portals
+portal name=Portal1 x=15 y=19 otherBoard=SimplePortal2 otherPortal=Portal1

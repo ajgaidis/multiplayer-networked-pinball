@@ -1,0 +1,33 @@
+board name=Portal2 gravity = 25.0 friction1 = 0.0 friction2 = 0.0
+
+# define three ball
+ball name=BallA x=1.25 y=1.25 xVelocity=-10 yVelocity=-10
+ball name=BallB x=2.25 y=1.25 xVelocity=10 yVelocity=-10
+ball name=BallC x=3.25 y=1.25 xVelocity=10 yVelocity=-10
+ball name=BallD x=4.25 y=1.25 xVelocity=-10 yVelocity=-60
+ball name=BallE x=5.25 y=1.25 xVelocity=10 yVelocity=-10
+ball name=BallF x=6.25 y=1.25 xVelocity=1 yVelocity=-10
+ball name=BallG x=7.25 y=1.25 xVelocity=2 yVelocity=-10
+ball name=BallH x=8.25 y=1.25 xVelocity=-3 yVelocity=-10
+ball name=BallI x=9.25 y=1.25 xVelocity=0 yVelocity=-10
+ball name=BallJ x=10.25 y=1.25 xVelocity=1 yVelocity=-10
+ball name=BallK x=11.25 y=1.25 xVelocity=2 yVelocity=-10
+ball name=BallL x=12.25 y=1.25 xVelocity=-3 yVelocity=-10
+ball name=BallM x=13.25 y=1.25 xVelocity=0 yVelocity=-10
+ball name=BallN x=14.25 y=1.25 xVelocity=1 yVelocity=-10
+ball name=BallO x=15.25 y=1.25 xVelocity=2 yVelocity=-10
+ball name=BallP x=16.25 y=1.25 xVelocity=-3 yVelocity=-10
+
+# define a series of circle bumpers
+circleBumper name=CircleA x=1 y=10
+circleBumper name=CircleB x=7 y=18
+circleBumper name=CircleC x=8 y=18
+circleBumper name=CircleD x=9 y=18
+
+# define a triangle bumper
+triangleBumper name=Tri x=12 y=15 orientation=180
+
+# define some portals
+portal name=PortalA x=18 y=18 otherBoard=Portal3 otherPortal=PortalB
+portal name=PortalB x=3 y=18 otherBoard=Portal3 otherPortal=PortalA
+portal name=PortalC x=7 y=7 otherBoard=Portal3 otherPortal=PortalB

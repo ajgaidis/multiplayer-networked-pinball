@@ -1,0 +1,25 @@
+board name=Portal gravity = 25.0
+
+# define three ball
+ball name=BallA x=1.25 y=1.25 xVelocity=0 yVelocity=0
+ball name=BallB x=2.25 y=3.25 xVelocity=3 yVelocity=0
+ball name=BallC x=4.25 y=1.25 xVelocity=0 yVelocity=4
+
+# define a series of square bumpers
+squareBumper name=SquareA x=0 y=17
+squareBumper name=SquareB x=1 y=17
+squareBumper name=SquareC x=2 y=17
+
+# define a series of circle bumpers
+circleBumper name=CircleA x=1 y=10
+circleBumper name=CircleB x=7 y=18
+circleBumper name=CircleC x=8 y=18
+circleBumper name=CircleD x=9 y=18
+
+# define a triangle bumper
+triangleBumper name=Tri x=12 y=15 orientation=180
+
+# define some portals
+portal name=PortalA x=18 y=18 otherBoard=Portal otherPortal=PortalB
+portal name=PortalB x=3 y=18 otherBoard=Portal otherPortal=PortalA
+portal name=PortalC x=7 y=7 otherBoard=Portal2 otherPortal=PortalB

@@ -1,0 +1,34 @@
+board name=SimpleKeys gravity = 25.0
+
+# define some balls
+ball name=BallA x=10.25 y=18.25 xVelocity=0.1 yVelocity=0.2
+ball name=BallB x=10.75 y=19 xVelocity=0.1 yVelocity=0.2
+ball name=BallC x=10.75 y=19 xVelocity=0.1 yVelocity=0.2
+
+# defining a triangle bumper
+triangleBumper name=Tri x=19 y=0 orientation=90
+
+# defining some circle bumpers
+circleBumper name=CircleA x=1 y=10
+circleBumper name=CircleB x=2 y=10
+circleBumper name=CircleC x=3 y=10
+circleBumper name=CircleD x=4 y=10
+circleBumper name=CircleE x=5 y=10
+
+circleBumper name=CircleF x=10 y=18
+circleBumper name=CircleG x=10 y=19
+
+# define two absorbers that catch the balls
+# and shoot them up again when triggered
+absorber name=Abs1 x=0 y=18 width=10 height=2
+absorber name=Abs2 x=11 y=18 width=9 height=2
+
+# "A" key triggers absorber 1
+keyup key=a action=Abs1
+
+# "Z" key triggers absorber 2
+keydown key=z action=Abs2
+
+# "F" key triggers absorber 1 and 2
+keydown key=f action=Abs1
+keydown key=f action=Abs2

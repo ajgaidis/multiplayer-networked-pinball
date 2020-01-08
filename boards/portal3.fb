@@ -1,0 +1,20 @@
+board name=Portal3 gravity = 25.0 friction1 = 0.0 friction2 = 0.0
+
+# define a series of circle bumpers
+circleBumper name=CircleA x=1 y=10
+circleBumper name=CircleB x=7 y=18
+circleBumper name=CircleC x=8 y=18
+circleBumper name=CircleD x=9 y=18
+circleBumper name=CircleE x=0 y=18
+circleBumper name=CircleF x=1 y=1
+circleBumper name=CircleG x=2 y=0
+circleBumper name=CircleH x=3 y=1
+circleBumper name=CircleI x=4 y=0
+
+# define a triangle bumper
+triangleBumper name=Tri x=12 y=15 orientation=180
+
+# define some portals
+portal name=PortalA x=18 y=18 otherBoard=Portal2 otherPortal=PortalB
+portal name=PortalB x=3 y=18 otherBoard=Portal4 otherPortal=PortalA
+portal name=PortalC x=7 y=7 otherBoard=Portal2 otherPortal=PortalB

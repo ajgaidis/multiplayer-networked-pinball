@@ -1,0 +1,13 @@
+board name=Default gravity = 24.0 friction1 = 0.2 friction2 = 0.6
+
+# define a ball
+ball name=BallA x=1.25 y=1.25 xVelocity=0 yVelocity=0
+
+# define a series of square bumpers
+squareBumper name=SquareA x=0 y=17
+squareBumper name=SquareB x=1 y=17
+squareBumper name=SquareC x=2 y=17
+
+# define a triangle bumper
+triangleBumper name=Tri1 x=12 y=15 orientation=180
+# triangleBumper name=Tri2 x=10 y=18 orientation=90
